@@ -8,6 +8,7 @@ RUN apk add --no-cache \
       nasm \
       python \
       zlib-dev \
- && npm install -g bower gulp
+ && npm install -g bower gulp grunt
+RUN apk add --no-cache git
 WORKDIR /app
 USER node
